@@ -1,0 +1,30 @@
+Nmae: Yash Kumar
+Roll No: 21CS30059
+
+Assignment 2: Scoring and Evaluation README
+
+Instructions for running the project:
+
+(1) For running the ranker.py file from command line, use the following command:
+    python3 Assignment2_21CS30059_ranker.py <name of documents dataset(cran.all.1400)> <name of query dataset(cran.qry)> <name of pickle file(model_queries_21CS30059.bin)>
+
+(2) For running the evaluator.py file from command line, use the following command:
+    python3 Assignment2_21CS30059_evaluator.py <name of gold standard ranked list(cranqrel)> <Name of ranked list text file(Assignment2_21CS30059_ranked_list_<K>.txt where K = {A,B,C})>
+
+NOTE: The pickle file containing the inverted index(model_queries_21CS30059.bin) which was already built in Assignment1 has also been submitted in the zip file along with other files
+
+Dataset details:
+- The corpus is a collection of 1400 documents.
+- The query file contains 225 queries.
+- Number of lemmatized and non stop-words in the set of documents = 6,661
+
+Packages used:
+- Python 3.10.4
+- nltk 3.8.1
+- spacy 3.5.3
+- pickle
+- sys
+
+Installation instructions:
+- Install the packages mentioned above using pip.
+- Download the spacy model using the command `python -m spacy download en_core_web_sm`
